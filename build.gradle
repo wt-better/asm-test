@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mtdp'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm-all
+    compile group: 'org.ow2.asm', name: 'asm-all', version: '5.0.4'
+}
